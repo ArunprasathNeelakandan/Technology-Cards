@@ -11,3 +11,20 @@ body {
 }
 
 /* Write CSS code here */
+
+.bg {
+  padding: 20px;
+  background-color: #f4faff;
+  height: 100vh;
+  font-family: Roboto;
+}
+
+.head {
+  text-align: center;
+  color: #171f46;
+}
+
+.para {
+  text-align: center;
+  color: #64748b;
+}

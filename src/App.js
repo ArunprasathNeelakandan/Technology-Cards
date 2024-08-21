@@ -1,3 +1,4 @@
+import CartItem from './components/CardItem'
 import './App.css'
 
 const cardsList = [
@@ -36,13 +37,18 @@ const cardsList = [
 ]
 
 const App = () => (
-  <div>
-    <h1>Learn 4.0 Technologies</h1>
-    <p>
+  <div className="bg">
+    <h1 className="head">Learn 4.0 Technologies</h1>
+    <p className="para">
       Get trained by alumni of IITs and top companies like Amazon, Microsoft,
       Intel, Nvidia, Qualcomm, etc. Learn directly from professionals involved
       in product development.
     </p>
+    <ul>
+      {cardsList.map(item => (
+        <CartItem key={item.id} item={item} />
+      ))}
+    </ul>
   </div>
 )
 
