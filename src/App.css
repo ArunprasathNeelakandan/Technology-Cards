@@ -17,6 +17,14 @@ body {
   background-color: #f4faff;
   height: 100vh;
   font-family: Roboto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card-item {
+  width: 750px;
+  background-position: top center;
 }
 
 .head {
@@ -27,4 +35,11 @@ body {
 .para {
   text-align: center;
   color: #64748b;
+}
+
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-evenly;
 }

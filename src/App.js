@@ -38,17 +38,19 @@ const cardsList = [
 
 const App = () => (
   <div className="bg">
+    <div className='card-item'>
     <h1 className="head">Learn 4.0 Technologies</h1>
     <p className="para">
       Get trained by alumni of IITs and top companies like Amazon, Microsoft,
       Intel, Nvidia, Qualcomm, etc. Learn directly from professionals involved
       in product development.
     </p>
-    <ul>
+    <ul className='ul'>
       {cardsList.map(item => (
         <CartItem key={item.id} item={item} />
       ))}
     </ul>
+    </div>
   </div>
 )
 

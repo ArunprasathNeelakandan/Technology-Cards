@@ -1,10 +1,14 @@
-// Write your code here.
+import './index.css'
+
 const CartItem = props => {
   const {item} = props
+  console.log(item)
 
   return (
-    <li>
-      <h4>{item.title}</h4>
+    <li className={`card ${item.className}`}>
+      <h4 className='title'>{item.title}</h4>
+      <p>{item.description}</p>
+      <img src={item.imgUrl} className='img'/>
     </li>
   )
 }

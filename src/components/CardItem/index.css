@@ -15,3 +15,23 @@
 }
 
 /* Write CSS code here. */
+.card {
+  padding: 10px 30px;
+  height: fit-content;
+  width: 330px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.title {
+  align-self: flex-start;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+  align-self: flex-end;
+}
